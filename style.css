@@ -1,0 +1,68 @@
+@font-face {
+    font-family: upper;
+    src: url(font/appetite.ttf);
+}
+
+h1, h2{
+    font-family: upper;
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-colors{
+    text-align: center;
+}
+
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: colorchange 8s infinite alternate;
+    animation-timing-function: ease;
+}
+
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top: 15%;
+    animation: colorchange 8s infinite alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes colorchange {
+    0%{
+        color: #ffffff;
+    }
+    20%{
+        color: #cccccc;
+    }
+    40%{
+        color: #666666;
+    }
+    60%{
+        color: #333333;
+    }
+    80%{
+        color: #333333;
+    }
+    100%{
+        color: #ffffff;
+    }
+}
+
+@media (max-width:480px){
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+    .hex-colors h2{
+        font-size: 1.5rem;
+    }
+}
+
+button{
+    margin: 20px;
+}
